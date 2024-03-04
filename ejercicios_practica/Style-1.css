@@ -1,0 +1,72 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+    /* se eliminan todos los margin por defecto */
+    margin: 0;
+    /* se eliminan todos los padding por defecto */
+    padding: 0; 
+    /* se elimina el estilo de las listas */
+    list-style-type: none;
+    /* el padding y border se consideran para calcular
+     el tamaño de la caja */
+    box-sizing: border-box;
+    /* se elimina el subrayado de los links <a> */
+    text-decoration: none
+  }
+
+.navegador {
+  display: flex;
+  padding: 1% 0 1% 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  height: fit-content;
+  background: rgb(22, 22, 22);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#menu{
+  width: 3%;
+  min-width: 30px;
+}
+
+#menu:hover{
+    transform: scale(2);
+    padding-left: 10px;
+    padding-bottom: 10px;
+  } 
+
+#lupa{
+  width: 3%;
+  min-width: 30px;
+}
+
+#lupa:hover{
+    transform: scale(1.5);
+  }
+
+#campana{
+  width: 3%;
+  min-width: 30px;
+}
+
+#campana:hover{
+    transform: scale(1.5);
+  }
+
+#avatar{
+  width: 6%;
+  min-width: 45px;
+}
+
+#avatar:hover{
+    transform: scale(1.5);
+    padding-right: 15px;
+    padding-top: 35px;
+  }
